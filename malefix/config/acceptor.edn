@@ -1,0 +1,5 @@
+{:qfj-config "config/acceptor.ini"
+ :direction :acceptor
+ :producer-config {"metadata.broker.list" "kafka:9092"
+                  "serializer.class" "kafka.serializer.DefaultEncoder"
+                  "partitioner.class" "kafka.producer.DefaultPartitioner"}}

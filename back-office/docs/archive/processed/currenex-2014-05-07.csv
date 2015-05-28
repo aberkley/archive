@@ -1,0 +1,2 @@
+Trade ID,Customer Trade ID,Type,Buy/Sell,CCY Pair,CCY,Near Amount,Far Amount,Rate,Points,Far Rate,Far Points,User Id,Fund Sub,Counterparty,Trade Date Time (GMT),Value Date,Far Value Date,Pricing Method,Status,How Created,How Cancelled,Is Aggressor,Position Id,Position Type
+A20141270HUJU00,80272-20140507-11:00:35.035-0,SP,SELL,GBP/JPY,GBP,185000.00,,172.257,0.0000,,,aace5101,AACE5100,FBGC,07 May 2014 11:00:37,09 May 2014,,ESP_ORDER,ACTIVE,HUBGIVEUP,,Yes,,

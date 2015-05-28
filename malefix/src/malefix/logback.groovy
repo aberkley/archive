@@ -1,0 +1,1 @@
+ROOT(INFO,["CONSOLE")

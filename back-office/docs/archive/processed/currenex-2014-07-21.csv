@@ -1,0 +1,3 @@
+Trade ID,Customer Trade ID,Type,Buy/Sell,CCY Pair,CCY,Near Amount,Far Amount,Rate,Points,Far Rate,Far Points,User Id,Fund Sub,Counterparty,Trade Date Time (GMT),Value Date,Far Value Date,Pricing Method,Status,How Created,How Cancelled,Is Aggressor,Position Id,Position Type
+A201419706F7800,,OR,SELL,GBP/USD,GBP,750000.00,,1.71202,-0.00042000,,,aace5101,AACE5100,FBGC,16 Jul 2014 11:19:26,18 Aug 2014,,REQUEST,ACTIVE,HUBGIVEUP,,Yes,,
+A201420201C2L00,,OR,SELL,GBP/USD,GBP,1500000.00,,1.707337,-0.00034300,,,aace5101,AACE5100,FBGC,21 Jul 2014 11:21:17,18 Aug 2014,,REQUEST,ACTIVE,HUBGIVEUP,,Yes,,

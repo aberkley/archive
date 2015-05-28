@@ -1,0 +1,3 @@
+Trade ID,Customer Trade ID,Type,Buy/Sell,CCY Pair,CCY,Near Amount,Far Amount,Rate,Points,Far Rate,Far Points,User Id,Fund Sub,Counterparty,Trade Date Time (GMT),Value Date,Far Value Date,Pricing Method,Status,How Created,How Cancelled,Is Aggressor,Position Id,Position Type
+A2014079046ZW00,80272-20140320-14:59:00.000-0,SP,BUY,GBP/USD,GBP,10000.00,,1.64956,0.0000,,,aace5101,AACE5100,FBGC,20 Mar 2014 14:59:02,24 Mar 2014,,ESP_ORDER,ACTIVE,HUBGIVEUP,,Yes,,
+A2014079046ZZ00,80272-20140320-14:59:05.005-0,SP,SELL,GBP/USD,GBP,10000.00,,1.64944,0.0000,,,aace5101,AACE5100,FBGC,20 Mar 2014 14:59:06,24 Mar 2014,,ESP_ORDER,ACTIVE,HUBGIVEUP,,Yes,,

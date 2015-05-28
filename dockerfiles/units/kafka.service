@@ -1,0 +1,13 @@
+[Unit]
+Description=kafka
+After=zk.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill kafka
+ExecStartPre=-/usr/bin/docker rm kafka
+ExecStart=/usr/bin/docker run --name="kafka" --link zk:zk -P sra_london/kafka:latest
+
+[Install]
+WantedBy=multi-user.target

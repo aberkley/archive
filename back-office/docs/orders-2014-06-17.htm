@@ -1,0 +1,1045 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+<title>i.nvest</title>
+
+<link href="/atonline/css/i.nvest/styles.css" rel="stylesheet" type="text/css" />
+<link href="/atonline/css/i.nvest/buttons.css" rel="stylesheet" type="text/css" />
+<link href="/atonline/css/i.nvest/dojo-override.css" rel="stylesheet" type="text/css" />
+<link href="/atonline/css/jquery.qtip.css" rel="stylesheet"  type="text/css" />
+<!-- load Dojo -->
+<link rel="stylesheet" href="https://atonline.alliancetrust.co.uk/dojo-1.8.0/dijit/themes/claro/claro.css"></link>
+<script src='https://atonline.alliancetrust.co.uk/dojo-1.8.0/dojo/dojo.js' data-dojo-config='parseOnLoad: true, skipIeDomLoaded: true, locale: "en-gb,en-us"'></script>
+<!-- load TypeKit-->
+<script type="text/javascript" src="//use.typekit.net/nzw5awh.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script>
+	function atdealingfaq(page){
+		window.open(page,null,'height=600,width=950,status=yes,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes');
+	}
+
+	dojo.require("dijit.form.Select");
+	dojo.require("dijit.form.TextBox");
+	dojo.require("dijit.form.NumberTextBox");
+	dojo.require("dijit.form.CheckBox");
+	dojo.require("dijit.form.DateTextBox");
+    dojo.require("dijit.form.RadioButton");
+    dojo.require("dijit.form.Textarea");
+    dojo.require("dijit.Dialog");
+	dojo.require("dijit.Tooltip");
+
+	var showProgressImageTimer = setTimeout("try{dojo.byId('pageLoadingImage').style.display = '';}catch(e){}", 1000); // if its taking longer than 1 sec
+	dojo.ready(function(){
+		preOverlayRemove();
+		try{clearTimeout(showProgressImageTimer);}catch (e) {};
+		
+		try{
+			dojo.addOnLoad(function () {
+	        	setTimeout(function() {try{pageReady();initFocus();} catch(e){}}, 300);
+	        	setTimeout(function() {try{removeOverlay();postOverlayRemove();} catch(e){}},300);
+			});
+		} catch(e){} // dont care?
+		
+	});
+
+
+	function preOverlayRemove(){
+	}
+
+	function postOverlayRemove(){
+	}	
+
+	function pageReady(){
+	}
+
+	function initFocus(){
+	}
+	function removeOverlay(){
+		var overlay = dojo.byId("overlay");
+		overlay.style.display = 'none';
+		dojo.byId('bodyContainer').style.display = '';
+	}
+</script>
+
+<style type="text/css">
+	#overlay {
+		position: absolute;
+		top: 0;left: 0;
+		width: 100%;
+		height: 100%;
+		/* height: 100%;*/
+		/*margin: auto;*/
+		/*margin-left: 10%;
+    	margin-right: 10%;*/
+    	max-height: none;
+		background-color: white;
+		z-index: 99;
+		opacity: 0.5;
+		filter:alpha(opacity=50); /* For IE8 and earlier */
+	}
+</style>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30159558-2']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body 
+	class="claro">
+
+<div id="overlay">
+	<img id="pageLoadingImage" alt="Please wait..." src="/atonline/img/i.nvest/ajax-loader.gif" 
+		style="display: none; position: relative; width: 40px; top: 200px; left:50%; margin-left: -20px; z-index: 100;"/>
+</div>
+
+<div align="center">
+
+<div id="container">
+
+
+<div id="header">
+	<div id="logo">
+		<img src="/atonline/img/i.nvest/ats-logo.gif" alt="Alliance Trust Savings " width="286" height="110" />
+	</div>
+	<div id="top-links">
+		<div align="right">
+		<div class="breadcrumb" id="top-nav"><a href="http://www.alliancetrust.co.uk/" target="_new">Alliance Trust PLC</a> | <a href="http://www.alliancetrustsavings.co.uk/platform-demos/" target="_new">Education</a> | <a href="http://www.alliancetrustsavings.co.uk/contact/" target="_new">Contact Us</a> | <a href="http://www.alliancetrustsavings.co.uk/how-we-use-cookies/" target="_new">Cookies</a></div>
+		
+		
+			
+			<form action="/atonline/ibm_security_logout" method="post" name="LogoutForm" id="LogoutForm">
+				<input type="hidden" name="logoutExitPage" value="Logout.action"/>
+				<div id="log-out">
+					<a href="#" onclick="document.forms['LogoutForm'].submit();return false;">
+						<img onmouseout="this.src = '/atonline/img/i.nvest/logout-off.gif'" onmouseover="this.src = '/atonline/img/i.nvest/logout-on.gif'" 
+							src="/atonline/img/i.nvest/logout-off.gif" alt="log out" name="Image23" width="125" height="27" border="0" id="Image23" />
+					</a>
+				</div>
+			</form>
+		
+		</div>
+	</div>
+<!--end header-->
+</div>
+
+
+
+
+
+
+
+<div id="nav">
+	<div align="left">
+		<div id="nav-item1"><a href="/atonline/secure/Start.action">Home</a></div>
+		<div id="nav-item1"><a href="/atonline/secure/MyAccountHome.action" title="My Accounts">My Accounts</a></div>
+	    <div id="nav-item1"><a href="/atonline/secure/MoneyMattersHome.action">Manage My Accounts</a></div>
+	    <div id="nav-item1"><a href="/atonline/secure/TradingCentreHome.action" class="nav-item-active">Trading Centre</a></div>
+	    <div id="nav-item1"><a href="/atonline/secure/ToolsHome.action">Research</a></div>
+	    
+	    
+	    	<div id="nav-item1"><a href="/atonline/secure/AccountMaintenanceHome.action" title="Personal Details">Personal Details</a></div>
+	    
+	    
+	    
+    </div>
+<!--end nav-->
+</div>
+
+
+<div id="bodyContainer" style="display: none;">
+	
+
+
+
+	
+	
+	
+	
+	
+
+
+
+<div align="left">
+	<div id="breadcrumb">
+		<div class="breadcrumb" id="breadcrumb-text">
+<!-- will only iterate 6 levels i.e. update end="6" to make it more -->
+
+	
+	
+	
+	
+		
+		
+		
+		
+			
+							
+				
+				
+					
+				
+				<a href="/atonline/secure//secure/Start.action">Home</a>
+			
+			
+		
+		
+	
+
+	
+	
+	
+	
+		
+		
+			&gt;
+		
+		
+		
+			
+							
+				
+				
+					
+				
+				<a href="/atonline/secure/TradingCentreHome.action">Trading Centre</a>
+			
+			
+		
+		
+	
+
+	
+	
+	
+	
+		
+		
+			&gt;
+		
+		
+			My Fund Orders
+		
+		
+		
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+
+		</div>
+		<div class="breadcrumb" id="breadcrumb-nav">
+			
+			
+			
+				<strong>Alliance Trust PLC Share Price:</strong> 446.10p <img src="/atonline/img/i.nvest/up.gif" alt="up"/> +0.10p (+0.02%)
+			
+		</div>
+	</div>
+<!--end breadcrumb-->
+</div>
+
+
+	 
+	 
+
+
+
+<div id="body-area-top">
+	<div align="left">
+		<div id="page-title"><h1>Trading Centre
+			
+				- <span class="ph-black">My Fund Orders</span>
+			
+		</h1></div>
+	</div>
+	
+	
+<!--end body-area-top-->
+</div>
+
+
+	
+	
+	
+	
+
+
+
+<div id="dd-drop-down-details">
+			
+		<div id="details">
+			<div id="name">
+				<span class="details-purple">Name:</span>
+				
+				
+					<span class="details-black" style="max-width: 10px">Schneider&nbsp;Research&nbsp;Associates&nbsp;Llp</span>
+				
+				
+			</div>
+			<div id="client-ref" style="float:left">
+				<span class="details-purple">Client Reference:</span>
+				
+				
+					<span class="details-black">191057</span>
+				 
+				
+			</div>
+			
+				<div id="total-value">
+					<span class="details-purple" style="float:left">Account:&nbsp;</span>
+					<div style="max-width: 470px; overflow: hidden; float: left">
+						<span class="details-black">11576391&nbsp;Investment&nbsp;Dealing&nbsp;Account&nbsp;-&nbsp;Investment&nbsp;</span>
+					</div>
+				</div>
+			
+			
+			
+		</div>
+	</div>
+<!--end drop-down-details-->
+
+<script type="text/javascript">
+function pageReady(){
+		dojo.byId('instructions').focus();
+	
+}
+</script>
+
+
+
+<table id="hor-minimalist-b" width="96%" border="0" cellspacing="0" cellpadding="0">
+	<tr class="odd">
+		<td style="width: 150px" class="leftAlign">
+		<div class="fieldTitle">Filter By:</div>
+		</td>
+		<td colspan="2">
+		<div class="leftAlign"><form id="FundOrders" name="FundOrders" action="/atonline/secure/FundOrders.action" method="post">
+			<select name="statusFilter" id="instructions" style="width: 15em" onchange="FundOrders.submit();" data-dojo-type="dijit.form.Select" maxHeight="200">
+    <option value="ALL">All Instructions</option>
+    <option value="OPEN">Open Instructions</option>
+    <option value="COMPLETED">Completed Instructions</option>
+    <option value="REJECTED">Rejected Instructions</option>
+
+
+</select>
+
+		</form>
+
+
+
+</div>
+		</td>
+	</tr>
+	
+
+
+
+
+
+
+
+</table>
+
+
+	
+		
+	
+
+
+	
+	<table id="hor-minimalist-b" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;">
+		<tr>
+			<td class="rightAlign"  style="width: 40%;">
+				
+			</td>
+			<td class="centreAlign" style="width: 20%;">
+				Page 1 of 4
+			</td>
+			<td class="leftAlign" style="width: 40%;">
+				
+					
+					
+						
+						<form id="FundOrdersNext" name="FundOrdersNext" action="/atonline/secure/FundOrdersNext.action" method="post">
+							<a id="FundOrdersNext_" href="javascript:document.forms['FundOrdersNext'].submit();">Next &gt;&gt;&gt;</a>
+						</form>
+
+
+
+
+					
+					
+				
+			</td>
+		</tr>
+	</table> 
+
+	
+	<table id="hor-minimalist-b" width="96%" border="0" cellspacing="0" cellpadding="0">
+		<tr class="odd">
+			<th scope="col" width="100px">
+				<div align="center">Order ID</div>
+			</th>
+			<th scope="col" width="100px">
+				<div class="centerAlign">Fund Symbol</div>
+			</th>
+			<th scope="col">
+				<div class="rightAlign">Quantity/Value</div>
+			</th>
+			<th scope="col">
+				<div class="centerAlign">Creation Time</div>
+			</th>
+			<th scope="col" width="120px">
+				<div class="centerAlign">Status</div>
+			</th>
+			<th scope="col">
+				<div class="leftAlign">Reject Reason</div>
+			</th>
+		</tr>
+
+		
+			
+			<tr class="">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=0'); return false;">#269641</a>
+				</td>
+				<td class="centerAlign">
+					BRGAAR						
+				</td>
+				<td class="rightAlign">
+					
+						£472,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					17/06/2014 09:54 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="odd">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=1'); return false;">#269640</a>
+				</td>
+				<td class="centerAlign">
+					BRIVSC						
+				</td>
+				<td class="rightAlign">
+					
+						£472,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					17/06/2014 09:51 						
+				</td>
+				<td class="centerAlign">
+					Rejected						
+				</td>
+				<td class="leftAlign">
+					Could not be actioned						
+				</td>								
+			</tr>
+		
+			
+			<tr class="">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=2'); return false;">#269638</a>
+				</td>
+				<td class="centerAlign">
+					C5JPBA						
+				</td>
+				<td class="rightAlign">
+					
+						£472,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					17/06/2014 09:50 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="odd">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=3'); return false;">#269636</a>
+				</td>
+				<td class="centerAlign">
+					MGJAPB						
+				</td>
+				<td class="rightAlign">
+					
+						£472,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					17/06/2014 09:49 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=4'); return false;">#268105</a>
+				</td>
+				<td class="centerAlign">
+					SUJAB						
+				</td>
+				<td class="rightAlign">
+					
+					
+						450,036.37
+											
+				</td>
+				<td class="centerAlign">
+					10/06/2014 08:40 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="odd">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=5'); return false;">#268103</a>
+				</td>
+				<td class="centerAlign">
+					PCOMJJ						
+				</td>
+				<td class="rightAlign">
+					
+					
+						378,518.11
+											
+				</td>
+				<td class="centerAlign">
+					10/06/2014 08:39 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=6'); return false;">#268101</a>
+				</td>
+				<td class="centerAlign">
+					NEPJSA						
+				</td>
+				<td class="rightAlign">
+					
+					
+						282,746.8
+											
+				</td>
+				<td class="centerAlign">
+					10/06/2014 08:38 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="odd">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=7'); return false;">#266102</a>
+				</td>
+				<td class="centerAlign">
+					NEPJSA						
+				</td>
+				<td class="rightAlign">
+					
+						£464,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					30/05/2014 10:53 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=8'); return false;">#266101</a>
+				</td>
+				<td class="centerAlign">
+					SUJAB						
+				</td>
+				<td class="rightAlign">
+					
+						£464,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					30/05/2014 10:53 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+			
+			<tr class="odd">
+				<td class="centerAlign">
+					
+						
+					
+					<a href="/atonline/secure/FundOrdersView.action" onclick="getOrderDetail('/atonline/secure/FundOrderDetail.action?order=9'); return false;">#266100</a>
+				</td>
+				<td class="centerAlign">
+					PCOMJJ						
+				</td>
+				<td class="rightAlign">
+					
+						£464,000.00
+					
+											
+				</td>
+				<td class="centerAlign">
+					30/05/2014 10:52 						
+				</td>
+				<td class="centerAlign">
+					Filled						
+				</td>
+				<td class="leftAlign">
+											
+				</td>								
+			</tr>
+		
+
+	</table>
+	
+		
+	
+
+
+	
+	<table id="hor-minimalist-b" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 11px; margin-top: 10px; margin-bottom: 10px;">
+		<tr>
+			<td class="rightAlign"  style="width: 40%;">
+				
+			</td>
+			<td class="centreAlign" style="width: 20%;">
+				Page 1 of 4
+			</td>
+			<td class="leftAlign" style="width: 40%;">
+				
+					
+						<a href="javascript:document.forms['FundOrdersNext'].submit();">Next &gt;&gt;&gt;</a>
+					
+					
+					
+				
+			</td>
+		</tr>
+	</table> 
+
+
+
+<div id="form-nav-buttons">
+	<div align="left">
+		<a id="cancelButton" href="/atonline/secure/TradingCentreHome.action" class="btn btn-active btn-large">&lt; Back</a>
+		
+			
+		
+		<a id="newInstructionButton" href="/atonline/secure/TradeInFundsBegin.action?returnAction=FundOrders" class="btn btn-primary btn-large">New Instruction &gt;</a>		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+dojo.require("dijit.Dialog");
+dojo.require("dijit.form.Button");
+function getOrderDetail(url)
+{
+	dojo.byId('contentDiv').style.display = 'none';
+	dojo.byId('progressIndicator').style.display = '';
+	viewDetailDialog.show();
+	var xhrArgs = {
+		      url: url,
+		      handleAs: "json",
+		      preventCache: true,
+		      load: function(data){
+
+				dojo.byId('error').innerHTML = '';
+				if (data.error) {
+					console.log("xhrPost error: " + data.error);
+					dojo.byId('error').innerHTML = data.error;
+					
+				} else {
+					console.log("xhrPost result: " + data);
+					dojo.byId('detail_orderReference').innerHTML = data.orderReference + ' (' + data.currentStatus + ')';
+					dojo.byId('detail_symbol').innerHTML = '(' + data.symbol + ') ' + data.issuerName;
+
+					if (data.rejectReason != null && data.rejectReason != '') {
+						dojo.byId('detail_reject_reason').innerHTML = data.rejectReason;
+						dojo.byId('detail_reject_reason_row').style.display = '';
+					} else {
+						dojo.byId('detail_reject_reason').innerHTML = '';
+						dojo.byId('detail_reject_reason_row').style.display = 'none';
+					}
+						
+					if (data.amount) {
+						dojo.byId('detail_amount').innerHTML = data.amount;
+						dojo.byId('detail_amount_row').style.display = '';
+						dojo.byId('detail_quantity_row').style.display = 'none';
+					} else {
+						dojo.byId('detail_quantity').innerHTML =  data.quantity;
+						dojo.byId('detail_quantity_row').style.display = '';
+						dojo.byId('detail_amount_row').style.display = 'none';
+					}
+
+					statusHistoryText = '';
+					for (var i in data.statusList) {
+						statusHistory = data.statusList[i];
+						statusHistoryText += statusHistory.eventTime.toString('dd/MM/yyyy') + ' : ' + statusHistory.status + '<br/>';						
+					}
+					dojo.byId('detail_status_history').innerHTML = statusHistoryText;
+				}
+				dojo.byId('contentDiv').style.display = '';
+				dojo.byId('progressIndicator').style.display = 'none';			      		
+								        		        
+		      },
+		      error: function(error){
+				alert('Error occurred: ' + error);		    	  		        
+		        dojo.byId('contentDiv').style.display = 'none';
+		    	dojo.byId('progressIndicator').style.display = 'none';
+		    	viewDetailDialog.onCancel();
+		      }
+		    }
+	console.log("Calling xhrPost");
+		    // Call the asynchronous xhrPost
+		    var deferred = dojo.xhrPost(xhrArgs);
+	console.log("END getOrderDetail");		    
+}
+</script>
+
+<style type="text/css">
+#viewDetailDialog {
+	font-size: 11px;
+}
+#viewDetailDialogContent {
+	width: 500px;
+	height: 300px;
+	max-height: 300px;
+	overflow-y: auto;		
+}
+
+</style>
+
+<div data-dojo-type="dijit.Dialog" data-dojo-id="viewDetailDialog" title="Order Details" style="display: none;width: 500px;	height: 400px;	max-height: 400px;">
+	<div id="viewDetailDialogContent">
+		<div id="contentDiv">
+			
+			<table id="hor-minimalist-b" width="96%" border="0" cellspacing="0" cellpadding="0">
+				<tr class="odd">
+					<td style="width: 150px" scope="col">
+						<div class="leftAlign">Order Reference:</div>
+					</td>
+					<td scope="col">
+						<div id="detail_orderReference" class="leftAlign"></div>
+					</td>
+				</tr>
+				
+				<tr class="">
+					<td>
+						<div class="leftAlign">Fund:</div>
+					</td>
+					<td>
+						<div id="detail_symbol" class="leftAlign"></div>
+					</td>
+				</tr>
+				
+				<tr id="detail_amount_row"  class="odd">
+					<td>
+						<div class="leftAlign">Amount to invest:</div>
+					</td>
+					<td>
+						<div id="detail_amount" class="leftAlign"></div>
+					</td>
+				</tr>
+				
+				<tr id="detail_quantity_row" class="">
+					<td>
+						<div class="leftAlign">Quantity to sell:</div>
+					</td>
+					<td>
+						<div id="detail_quantity" class="leftAlign"></div>
+					</td>
+				</tr>				
+				
+				<tr id="detail_reject_reason_row" class="odd">
+					<td>
+						<div class="leftAlign">Reject Reason:</div>
+					</td>
+					<td>
+						<div id="detail_reject_reason" class="leftAlign"></div>
+					</td>
+				</tr>
+				
+				<tr class="">
+					<td class="topAlign">
+						<div class="leftAlign">Status History:</div>
+					</td>
+					<td>
+						<div id="detail_status_history" class="leftAlign"></div>
+					</td>
+				</tr>
+			</table>
+				
+			<div id="error"></div>
+			
+			
+    	</div>
+        <div id="progressIndicator" style="vertical-align: middle;text-align: center; font-size: 11pt; line-height: 18px;margin: 100px 50px 10px 50px;">
+        	<img id="progressImage" alt="Please wait..." src="/atonline/img/i.nvest/progress-bar.gif"/>
+			<br/>
+			<br/>
+			Please wait...
+        </div>
+    </div>
+    <div class="dijitDialogPaneActionBar">
+    	<a href="/atonline/secure/FundOrdersView.action" class="btn btn-active btn-large" onclick="viewDetailDialog.onCancel();return false;">Close</a>	    	                
+   	</div>
+    
+</div>
+
+
+
+	
+<div id="iframe-quick-area">
+<div align="left">
+<div id="iframe-area"><div align="center">
+  <iframe src="https://lt.morningstar.com/d2xxpnum9j/landingpage/default.aspx?tab=main2&embedded=true&width=658" style="height: 360px; width: 658px;" frameborder="0" scrolling="no">><a href="http://lt.morningstar.com/ova4sc327n/landingpage/default.aspx">Investment Highlights</a></iframe>
+</div>
+</div></div>
+<div id="quick-links"><div id="quick-links-head"></div><div id="quick-links-text">
+  <div align="left" class="quick-links">
+    
+    
+    
+	  	<a href="/atonline/secure/DebitCardPaymentBegin.action">Add Money</a><br />
+	    <a href="/atonline/secure/TradingCentreHome.action">Place Deal</a><br />
+	    <a href="/atonline/secure/IncomeRedirectionStep1View.action">Change Income Options</a><br />
+	    <a href="/atonline/secure/BankDetailsAdd.action">Nominate a New Bank Account</a><br />
+	    <a href="/atonline/secure/MoneyMattersHome.action">Transfer Money</a><br />
+    
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+  </div>
+</div></div>
+</div>
+
+
+	
+
+<div id="footer-top">
+
+<div id="footer-top-panel"><a href="/atonline/secure/Start.action" class="white-text"><img src="/atonline/img/i.nvest/home-icon.gif" alt="home" width="28" height="28" hspace="5" border="0" align="absmiddle" />Home</a></div>
+
+<div id="footer-top-panel2"><a href="http://www.alliancetrustsavings.co.uk/platform-demos/" target="_new" class="white-text"><img src="/atonline/img/i.nvest/video.gif" alt="Watch Videos" width="28" height="28" hspace="5" border="0" align="absmiddle" />Watch Instructional Videos</a></div>
+
+<div id="footer-top-panel2"><a href="http://www.alliancetrustsavings.co.uk/contact/" target="_new" class="white-text"><img src="/atonline/img/i.nvest/contact.gif" alt="Contact us" width="28" height="28" hspace="5" border="0" align="absmiddle" />Contact Us</a></div>
+
+<div id="footer-top-panel2"><a href="http://www.alliancetrustsavings.co.uk/how-we-use-cookies/" target="_new" class="white-text"><img src="/atonline/img/i.nvest/cookie.gif" alt="how we use cookies" width="28" height="28" hspace="5" border="0" align="absmiddle" />How we use Cookies</a></div>
+
+
+
+	<div id="footer-top-panel2"><a href="http://www.alliancetrustsavings.co.uk/literature/" target="_new" class="white-text"><img src="/atonline/img/i.nvest/docs.gif" alt="Forms and Documents" width="28" height="28" hspace="5" border="0" align="absmiddle" />Forms &amp; Documents</a></div>
+
+
+</div>
+<div id="footer-mid">
+<div class="footer-links" id="footer-mid-panel3"><strong><a href="/atonline/secure/MyAccountHome.action">My Accounts</a></strong><br />
+  <a href="/atonline/secure/Holdings.action">Holdings</a><br />
+  
+	
+    
+  <a href="/atonline/secure/TradeHistory.action?backAction=MyAccountHome">Trading History</a><br />
+  
+	
+    
+  <a href="/atonline/secure/CreateStatement.action?backAction=MyAccountHome">Statements</a><br />
+  
+	
+    
+  <a href="/atonline/secure/CreateValuation.action?backAction=MyAccountHome">Valuations</a>
+  
+</div>
+<div id="footer-mid-panel"><span class="footer-links"><strong><a href="/atonline/secure/MoneyMattersHome.action">Manage My Accounts</a></strong><br /> 
+    <a href="/atonline/secure/InternalMovementsCashBegin.action">Cash Transfers</a><br />
+    <a href="/atonline/secure/CashSweepSelectOptionsBegin.action">Cash Sweep</a><br /> 
+    <a href="/atonline/secure/DirectDebitManagementNewStep1View.action">New Direct Debit</a><br />
+    <a href="/atonline/secure/DirectDebitManagementView.action">Direct Debit Management</a><br /> 
+    <a href="/atonline/secure/DebitCardViewPaymentDetails.action">Debit Card</a><br />
+    
+    	
+     
+    <a href="/atonline/secure/BankTransferDetails.action?Type=ALL">Payment Details</a><br />
+    <a href="/atonline/secure/OnlineTransactionView.action">Online Forms</a><br /> 
+    <a href="/atonline/secure/IncomeRedirectionStep1View.action">Income Management</a></span>
+</div>
+<div class="footer-links" id="footer-mid-panel"><strong><a href="/atonline/secure/TradingCentreHome.action">Trading Centre</a></strong><br /> 
+  <a href="/atonline/secure/DAQView.action">Trade Now</a><br /> 
+  <a href="/atonline/secure/ConditionalOrderStep1.action">Conditional Orders</a><br /> 
+  <a href="/atonline/secure/ReinvestmentTradingBegin.action">Reinvestment Trading</a><br /> 
+  <a href="/atonline/secure/CrossProductTradingStep1View.action">Cross Account Trading</a><br /> 
+  <a href="/atonline/secure/ConditionalOrderOpenList.action">My Orders</a><br />
+  <a href="/atonline/secure/TradeInFundsBegin.action">Place a Fund Order</a><br /> 
+  <a href="/atonline/secure/FundOrders.action">My Fund Orders</a><br />
+  <a href="/atonline/secure/InternationalInvestmentTradingBegin.action">International Equity Finder</a><br /> 
+  <a href="/atonline/secure/InternationalInvestmentOrdersView.action">International Equity Orders</a><br />  
+</div>
+<div class="footer-links" id="footer-mid-panel"><strong><a href="/atonline/secure/ToolsHome.action">Research</a></strong><br /> 
+  <a href="/atonline/secure/ToolsHome.action">Research Page</a>
+</div>
+
+	<div class="footer-links" id="footer-mid-panel2"><strong><a href="/atonline/secure/AccountMaintenanceHome.action">Personal Details</a></strong><br /> 
+	  <a href="/atonline/secure/DocumentList.action">Documents</a><br />
+	  <a href="/atonline/secure/DocumentSettingsView.action">Document Settings</a><br/>
+	  <a href="/atonline/secure/ChangePINView.action">Change Password</a><br />
+	  <a href="/atonline/secure/SecurityQuestionsView.action">Security Questions</a><br /> 
+	  <a href="/atonline/secure/PersonalDetailsView.action">My Details</a><br /> 
+	  <a href="/atonline/secure/PersonalAddressList.action">My Address</a><br /> 
+		
+			
+		
+	  <a href="/atonline/secure/BankDetailsList.action?returnLink=%2Fsecure%2FAccountMaintenanceHome.action">Bank Details</a>
+	  
+	</div>
+
+
+</div>
+
+<div id="footer-bottom"><div align="center"><div id="footer-bottom-text">Alliance Trust Online is provided by Alliance Trust Savings for you to manage your Alliance Trust Accounts. <br />
+<br />
+This service and web pages supporting it may be added to, modified or removed in response to operational experience and customer request. <br />
+<br />
+&copy; Alliance Trust 2000 - 2014</div></div>
+</div>
+
+
+</div>
+<!--end container-->
+</div>
+<!--end centred-->
+</div>
+
+</body>
+</html>

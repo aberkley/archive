@@ -1,0 +1,13 @@
+[Unit]
+Description=zookeeper
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill zk
+ExecStartPre=-/usr/bin/docker rm zk
+ExecStart=/usr/bin/docker run --name="zk" sra_london/zookeeper:latest
+
+[Install]
+WantedBy=multi-user.target

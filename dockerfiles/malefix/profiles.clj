@@ -1,0 +1,10 @@
+{:user {:plugins [[cider/cider-nrepl "0.8.1"]
+                  [refactor-nrepl "0.2.1"]
+                  [lein-ancient "0.5.5" :exclusions [org.clojure/clojure org.clojure/data.xml]]
+                  [lein-kibit "0.0.8" :exclusions [org.clojure/clojure]]
+                  [jonase/eastwood "0.1.4" :exclusions [org.clojure/clojure]]
+                  [lein-cloverage "1.0.2"]
+                  [lein-marginalia "0.8.0" :exclusions [org.clojure/clojure]]
+				  [lein-midje "3.1.3"]]
+        :dependencies [[slamhound "1.5.5"]]
+        :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}

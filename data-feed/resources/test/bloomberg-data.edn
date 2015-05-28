@@ -1,0 +1,252 @@
+{:simple-reference-data
+   {:fields ["FUND_GEO_FOCUS" "FUND_TYP" "FUND_TOTAL_ASSETS" "FUND_TOTAL_ASSETS_CRNCY"]
+    :securities ["BRGNAMI ID Equity" "CAZUEXI LN Equity"]
+    :outputs [{"FUND_TOTAL_ASSETS_CRNCY" "USD"
+               "FUND_TOTAL_ASSETS" "87.28953"
+               "FUND_TYP" "Open-End Fund"
+               "security" "BRGNAMI ID Equity"
+               "FUND_GEO_FOCUS" "North American Region"}
+              {"FUND_TOTAL_ASSETS_CRNCY" "GBP"
+               "FUND_TOTAL_ASSETS" "1038.607"
+               "FUND_TYP" "OEIC"
+               "security" "CAZUEXI LN Equity"
+               "FUND_GEO_FOCUS" "U.K."}]}
+   :bulk-reference-data
+   {:fields ["FUT_CHAIN"]
+    :sub-fields [["Security Description"]]
+    :securities ["GXZ4 Index" "MFZ4 Index"]
+    :outputs [ {"security" "GXZ4 Index"
+                "FUT_CHAIN"
+                '({"Security Description" "GXZ90 Index"}
+                  {"Security Description" "GXH91 Index"}
+                  {"Security Description" "GXM91 Index"}
+                  {"Security Description" "GXU91 Index"}
+                  {"Security Description" "GXZ91 Index"}
+                  {"Security Description" "GXH92 Index"}
+                  {"Security Description" "GXM92 Index"}
+                  {"Security Description" "GXU92 Index"}
+                  {"Security Description" "GXZ92 Index"}
+                  {"Security Description" "GXH93 Index"}
+                  {"Security Description" "GXM93 Index"}
+                  {"Security Description" "GXU93 Index"}
+                  {"Security Description" "GXZ93 Index"}
+                  {"Security Description" "GXH94 Index"}
+                  {"Security Description" "GXM94 Index"}
+                  {"Security Description" "GXU94 Index"}
+                  {"Security Description" "GXZ94 Index"}
+                  {"Security Description" "GXH95 Index"}
+                  {"Security Description" "GXM95 Index"}
+                  {"Security Description" "GXU95 Index"}
+                  {"Security Description" "GXZ95 Index"}
+                  {"Security Description" "GXH96 Index"}
+                  {"Security Description" "GXM96 Index"}
+                  {"Security Description" "GXU96 Index"}
+                  {"Security Description" "GXZ96 Index"}
+                  {"Security Description" "GXH97 Index"}
+                  {"Security Description" "GXM97 Index"}
+                  {"Security Description" "GXU97 Index"}
+                  {"Security Description" "GXZ97 Index"}
+                  {"Security Description" "GXH98 Index"}
+                  {"Security Description" "GXM98 Index"}
+                  {"Security Description" "GXU98 Index"}
+                  {"Security Description" "GXZ98 Index"}
+                  {"Security Description" "GXH99 Index"}
+                  {"Security Description" "GXM99 Index"}
+                  {"Security Description" "GXU99 Index"}
+                  {"Security Description" "GXZ99 Index"}
+                  {"Security Description" "GXH00 Index"}
+                  {"Security Description" "GXM00 Index"}
+                  {"Security Description" "GXU00 Index"}
+                  {"Security Description" "GXZ00 Index"}
+                  {"Security Description" "GXH01 Index"}
+                  {"Security Description" "GXM01 Index"}
+                  {"Security Description" "GXU01 Index"}
+                  {"Security Description" "GXZ01 Index"}
+                  {"Security Description" "GXH02 Index"}
+                  {"Security Description" "GXM02 Index"}
+                  {"Security Description" "GXU02 Index"}
+                  {"Security Description" "GXZ02 Index"}
+                  {"Security Description" "GXH03 Index"}
+                  {"Security Description" "GXM03 Index"}
+                  {"Security Description" "GXU03 Index"}
+                  {"Security Description" "GXZ03 Index"}
+                  {"Security Description" "GXH04 Index"}
+                  {"Security Description" "GXM04 Index"}
+                  {"Security Description" "GXU04 Index"}
+                  {"Security Description" "GXZ04 Index"}
+                  {"Security Description" "GXH05 Index"}
+                  {"Security Description" "GXM05 Index"}
+                  {"Security Description" "GXU05 Index"}
+                  {"Security Description" "GXZ05 Index"}
+                  {"Security Description" "GXH06 Index"}
+                  {"Security Description" "GXM06 Index"}
+                  {"Security Description" "GXU06 Index"}
+                  {"Security Description" "GXZ06 Index"}
+                  {"Security Description" "GXH07 Index"}
+                  {"Security Description" "GXM07 Index"}
+                  {"Security Description" "GXU07 Index"}
+                  {"Security Description" "GXZ07 Index"}
+                  {"Security Description" "GXH08 Index"}
+                  {"Security Description" "GXM08 Index"}
+                  {"Security Description" "GXU08 Index"}
+                  {"Security Description" "GXZ08 Index"}
+                  {"Security Description" "GXH09 Index"}
+                  {"Security Description" "GXM09 Index"}
+                  {"Security Description" "GXU09 Index"}
+                  {"Security Description" "GXZ09 Index"}
+                  {"Security Description" "GXH10 Index"}
+                  {"Security Description" "GXM10 Index"}
+                  {"Security Description" "GXU10 Index"}
+                  {"Security Description" "GXZ10 Index"}
+                  {"Security Description" "GXH11 Index"}
+                  {"Security Description" "GXM11 Index"}
+                  {"Security Description" "GXU11 Index"}
+                  {"Security Description" "GXZ11 Index"}
+                  {"Security Description" "GXH12 Index"}
+                  {"Security Description" "GXM12 Index"}
+                  {"Security Description" "GXU12 Index"}
+                  {"Security Description" "GXZ12 Index"}
+                  {"Security Description" "GXH13 Index"}
+                  {"Security Description" "GXM13 Index"}
+                  {"Security Description" "GXU13 Index"}
+                  {"Security Description" "GXZ13 Index"}
+                  {"Security Description" "GXH4 Index"}
+                  {"Security Description" "GXM4 Index"}
+                  {"Security Description" "GXU4 Index"}
+                  {"Security Description" "GXZ4 Index"}
+                  {"Security Description" "GXH5 Index"}
+                  {"Security Description" "GXM5 Index"})}
+               {"security" "MFZ4 Index",
+                "FUT_CHAIN"
+                '({"Security Description" "MFM05 Index"}
+                  {"Security Description" "MFU05 Index"}
+                  {"Security Description" "MFZ05 Index"}
+                  {"Security Description" "MFH06 Index"}
+                  {"Security Description" "MFM06 Index"}
+                  {"Security Description" "MFU06 Index"}
+                  {"Security Description" "MFZ06 Index"}
+                  {"Security Description" "MFH07 Index"}
+                  {"Security Description" "MFM07 Index"}
+                  {"Security Description" "MFU07 Index"}
+                  {"Security Description" "MFZ07 Index"}
+                  {"Security Description" "MFH08 Index"}
+                  {"Security Description" "MFM08 Index"}
+                  {"Security Description" "MFU08 Index"}
+                  {"Security Description" "MFZ08 Index"}
+                  {"Security Description" "MFH09 Index"}
+                  {"Security Description" "MFM09 Index"}
+                  {"Security Description" "MFU09 Index"}
+                  {"Security Description" "MFZ09 Index"}
+                  {"Security Description" "MFH10 Index"}
+                  {"Security Description" "MFM10 Index"}
+                  {"Security Description" "MFU0 Index"}
+                  {"Security Description" "MFZ10 Index"}
+                  {"Security Description" "MFH11 Index"}
+                  {"Security Description" "MFM11 Index"}
+                  {"Security Description" "MFU11 Index"}
+                  {"Security Description" "MFZ11 Index"}
+                  {"Security Description" "MFH12 Index"}
+                  {"Security Description" "MFM12 Index"}
+                  {"Security Description" "MFU12 Index"}
+                  {"Security Description" "MFZ12 Index"}
+                  {"Security Description" "MFH13 Index"}
+                  {"Security Description" "MFM13 Index"}
+                  {"Security Description" "MFU13 Index"}
+                  {"Security Description" "MFZ13 Index"}
+                  {"Security Description" "MFH4 Index"}
+                  {"Security Description" "MFM4 Index"}
+                  {"Security Description" "MFU4 Index"}
+                  {"Security Description" "MFZ4 Index"}
+                  {"Security Description" "MFH5 Index"}
+                  {"Security Description" "MFM5 Index"})}]}
+   :historical-bar-data
+   {:start (t/date-time 2014 10 20)
+    :end (t/date-time 2014 10 31)
+    ;; assumed to be daily, I think
+    :securities ["JPJEAAY LX Equity"
+                 "SGMUCGA ID Equity"
+                 "SGACGEA ID Equity"]
+    :outputs '({"LAST_PRICE" 725.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-20"}
+               {"LAST_PRICE" 718.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-21"}
+               {"LAST_PRICE" 737.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-22"}
+               {"LAST_PRICE" 734.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-23"}
+               {"LAST_PRICE" 742.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-24"}
+               {"LAST_PRICE" 745.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-27"}
+               {"LAST_PRICE" 742.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-28"}
+               {"LAST_PRICE" 754.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-29"}
+               {"LAST_PRICE" 760.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-30"}
+               {"LAST_PRICE" 816.0,
+                "security" "JPJEAAY LX Equity",
+                "date" "2014-10-31"}
+               {"LAST_PRICE" 18.9565,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-20"}
+               {"LAST_PRICE" 19.2154,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-21"}
+               {"LAST_PRICE" 19.6765,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-22"}
+               {"LAST_PRICE" 19.5026,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-23"}
+               {"LAST_PRICE" 19.7387,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-24"}
+               {"LAST_PRICE" 19.9293,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-28"}
+               {"LAST_PRICE" 20.1574,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-29"}
+               {"LAST_PRICE" 20.108,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-30"}
+               {"LAST_PRICE" 20.2263,
+                "security" "SGMUCGA ID Equity",
+                "date" "2014-10-31"}
+               {"LAST_PRICE" 1.1126,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-20"}
+               {"LAST_PRICE" 1.1248,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-21"}
+               {"LAST_PRICE" 1.1461999999999999,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-22"}
+               {"LAST_PRICE" 1.1394,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-23"}
+               {"LAST_PRICE" 1.1499,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-24"}
+               {"LAST_PRICE" 1.159,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-28"}
+               {"LAST_PRICE" 1.172,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-29"}
+               {"LAST_PRICE" 1.1648,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-30"}
+               {"LAST_PRICE" 1.182,
+                "security" "SGACGEA ID Equity",
+                "date" "2014-10-31"})}}

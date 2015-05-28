@@ -1,0 +1,3 @@
+Trade ID,Customer Trade ID,Type,Buy/Sell,CCY Pair,CCY,Near Amount,Far Amount,Rate,Points,Far Rate,Far Points,User Id,Fund Sub,Counterparty,Trade Date Time (GMT),Value Date,Far Value Date,Pricing Method,Status,How Created,How Cancelled,Is Aggressor,Position Id,Position Type
+A20140970VA7P00,80272-20140407-11:16:24.024-0,SP,SELL,GBP/JPY,GBP,10000.00,,171.217,0.0000,,,aace5101,AACE5100,FBGC,07 Apr 2014 11:16:22,09 Apr 2014,,ESP_ORDER,ACTIVE,HUBGIVEUP,,Yes,,
+A20140970VA8200,80272-20140407-11:16:50.050-0,SP,SELL,GBP/JPY,GBP,190000.00,,171.216,0.0000,,,aace5101,AACE5100,FBGC,07 Apr 2014 11:16:48,09 Apr 2014,,ESP_ORDER,ACTIVE,HUBGIVEUP,,Yes,,

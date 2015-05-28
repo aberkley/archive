@@ -1,0 +1,2 @@
+{:qfj-config "config/acceptor.ini"
+ :direction :acceptor}

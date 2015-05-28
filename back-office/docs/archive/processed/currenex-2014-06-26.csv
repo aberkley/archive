@@ -1,0 +1,2 @@
+Trade ID,Customer Trade ID,Type,Buy/Sell,CCY Pair,CCY,Near Amount,Far Amount,Rate,Points,Far Rate,Far Points,User Id,Fund Sub,Counterparty,Trade Date Time (GMT),Value Date,Far Value Date,Pricing Method,Status,How Created,How Cancelled,Is Aggressor,Position Id,Position Type
+A201417503X2N00,,OR,SELL,GBP/JPY,GBP,1250000.00,,172.9504,-0.19360000,,,aace5101,AACE5100,FBGC,24 Jun 2014 11:00:49,11 Sep 2014,,REQUEST,ACTIVE,HUBGIVEUP,,Yes,,

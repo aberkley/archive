@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled 
+0f485b6d37082a9f6a5981ac9f3943625dc2d8c7 refs/remotes/origin/kafka-spout
+e29203b8a2e431e0b9115e526f3745459a41a3d6 refs/remotes/origin/master
+0ea192ebdb506dc9a7b7fa0cb0e251b3c5a804c2 refs/remotes/origin/qfj
